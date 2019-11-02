@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import './fonts/Montserrat/Montserrat-Regular.ttf'
+import './fonts/Open_Sans/OpenSans-Regular.ttf'
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
