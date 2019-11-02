@@ -1,6 +1,10 @@
 const express = require('express');
 const app = express();
-app.use(require('body-parser').json())
+
+
+// Middleware
+app.use(express.json());
+
 
 app.get('/api/test', (req, res) => {
   const test = 'api works';
