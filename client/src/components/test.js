@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react';
-import Axios from 'axios';
+import React, { useState, useEffect } from "react";
+import Axios from "axios";
 
 const Test = () => {
   const [data, setData] = useState(null);
@@ -8,17 +8,15 @@ const Test = () => {
     const fetchData = async () => {
       try {
         const fetchedData = await Axios.get(`/api/test`);
-        setData(fetchedData.data)
-
+        setData(fetchedData.data);
       } catch (error) {
-          //
+        //
       }
     };
 
     fetchData();
   }, []);
 
-
-  return(<>{data}</>)
+  return <>{data}</>;
 };
 export default Test;
