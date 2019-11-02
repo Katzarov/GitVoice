@@ -17,6 +17,11 @@
   background: linear-gradient(#008ddd, #00508c);
 }
 
+.NavBarContainer {
+  width: 90%;
+
+}
+
 .TitleSubContainer {
   text-align: center;
 }
@@ -56,5 +61,5 @@
   user-select: none;
 }
 
-.WaveForm {
+.WaveFormContainer {
 }
