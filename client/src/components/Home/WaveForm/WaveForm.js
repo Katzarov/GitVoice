@@ -6,7 +6,7 @@ const WaveForm = () => {
     const numBars = 30;
     let bars = [];
     for (let i = 0; i < numBars; i++) {
-      bars.push(<div key={i} id={`bar${i}`}/>);
+      bars.push(<div key={i} id={`bar${i}`} />);
     }
     return bars;
   };
