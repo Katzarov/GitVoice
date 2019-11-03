@@ -1,0 +1,19 @@
+.NavBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  color: #f8f8f8;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  user-select: none;
+}
+
+.Link {
+}
+
+.Login {
+  font-weight: 800;
+}
