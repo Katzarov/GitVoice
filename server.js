@@ -13,7 +13,7 @@ app.get('/api/test', (req, res) => {
 // github webhook test
 app.post('/api/hook', (req, res) => {
   console.log(req.body.issue.title)
-  res.status(200)
+  res.json(200)
 });
 
 const port = 5000;
