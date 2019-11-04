@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 150px;
+  height: 125px;
   width: 100%;
   -webkit-filter: blur(2px);
   filter: blur(2px);
@@ -20,11 +20,13 @@
   animation: pulse 1.3s infinite;
 }
 
+//define sizes of wave bars
 $dot: "10%";
 $small: "30%";
 $medium: "50%";
 $large: "75%";
 $full: "100%";
+//define the waveform
 $bar-heights: (
   $dot,
   $dot,
@@ -68,16 +70,13 @@ $bar-heights: (
 @keyframes pulse {
   0% {
     transform: scaleY(1);
-    transform-origin: 50% 50%;
   }
 
   50% {
     transform: scaleY(0.8);
-    transform-origin: 50% 50%;
   }
 
   100% {
     transform: scaleY(1);
-    transform-origin: 50% 50%;
   }
 }

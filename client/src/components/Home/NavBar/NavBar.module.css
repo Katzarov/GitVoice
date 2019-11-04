@@ -1,19 +1,23 @@
 .NavBar {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-end;
   font-style: normal;
   font-weight: 400;
   font-size: 1em;
   color: #f8f8f8;
   letter-spacing: 0.1em;
-  cursor: pointer;
-  user-select: none;
 }
 
 .Link {
+  cursor: pointer;
+  user-select: none;
+  margin-left: 2em;
 }
 
 .Login {
+  cursor: pointer;
+  user-select: none;
+  margin-left: 4em;
   font-weight: 800;
 }
