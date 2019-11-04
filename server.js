@@ -8,7 +8,7 @@ const users = require('./routes/api/users');
 app.use(express.json());
 
 // DB config
-const db = require('./config/keys').mongoURI;
+const db = require('./.env').mongoURI;
 
 // Connect to DB
 mongoose.connect(db, {useNewUrlParser: true, useUnifiedTopology: true})
@@ -26,7 +26,7 @@ app.get('/api/test', (req, res) => {
 
 // github webhook test
 app.post('/api/hook', (req, res) => {
-  console.log(req.body.issue.title)
+  console.log(req.body)
   res.json(200)
 });
 
